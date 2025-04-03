@@ -1,1 +1,0 @@
-/home/gngr/projects/vincent-van-yogh/vvy.sh
