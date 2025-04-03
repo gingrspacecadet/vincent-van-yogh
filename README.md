@@ -12,24 +12,22 @@ This is a Bash script that helps you install packages from Git repositories on A
 
 ### 1. How to Use the Script
 
-1.  **Save the Script:** Save the provided script as `install-package.sh` in a directory of your choice.
-2.  **Make it Executable:** Open your terminal and navigate to the directory where you saved the script. Then, run the following command to make the script executable:
-
+1. **Clone the repo**
     ```bash
-    chmod +x install-package.sh
+    git clone https://github.com/gingrspacecadet/vincent-van-yogh.git
     ```
-
-3.  **Run the Script:** Use the following command to install a package from a Git repository:
-
+2. **Make it a package**
     ```bash
-    ./install-package.sh -S <repository_url>
+    cd vincent-van-yogh
+    makepkg -si
+    cd ..
+    rm -fr vincent-van-yogh
     ```
-
-    Replace `<repository_url>` with the actual URL of the Git repository you want to install. For example:
-
-    ```bash
-    ./install-package.sh -S [https://github.com/example/example-package.git](https://github.com/example/example-package.git)
-    ```
+3. **Run the script**
+   ```bash
+   vvy -S <repo-url>
+   ```
+   Replace `<repo-url>` with the URL of the package you want to install
 
 ### 2. What the Script Does
 
